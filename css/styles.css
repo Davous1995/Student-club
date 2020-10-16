@@ -4,14 +4,14 @@
     File name: student/css/styles.css
     */
     /*css reset*/
-body, header, nav, main, footer, h1, div, img{
+body, header, nav, main, footer, h1, div, img, ul{
           margin: 0;
           padding: 0;
           border: 0;
 }
 /*styles rule for body and img*/
 body {
-            background-color: #006b4c;
+            background-image:  linear-gradient(#333399,#006600);        /* #339970;*/
           }
 
 img {
@@ -20,45 +20,72 @@ img {
   }
 
 
-header {
-    float: left;
-    width: 20%;
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image:  linear-gradient(#333399,#006600);
+    height: 110px;
+  }
+
+  header img {
+        margin: 0 auto;
+        width: 29%
   }
 
 /*style rules for nav area*/
+
+
+
+/*style rules for nav area*/
 nav {
-  float: right;
-  margin: 5em 3em 0 0;
-  width: 70%;
+      padding: 1%;
+      margin-bottom: 1%;
+
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    text-align: right;
+    text-align: center;
 
 }
 nav li{
-    display: inline-block;
     font-size: 1.25em;
-    font-family: verdana, arial, sans-serif;
-    font-weight: bold;
+    border-top: 1px solid #fff;
+    font-family: 'Chilanka', cursive;
+}
+
+nav li:first-child{
+  border-top: none;
+}
+
+nav li: hover{
+  background-color: #00610d;
 }
 
 nav li a{
   display: block;
   color: #fff;
-  text-align: center;
   padding: 0.5em 1em;
   text-decoration: none;
 }
 
+
+/*Show mobile class, hide desktop class*/
+
+.mobile {
+  display: block;
+}
+
+.tablet-desktop {
+  display: none;
+}
 /* style rules for main */
 main {
-  clear: left;
   background-color: #fff;
   padding: 2%;
   font-size: 1.25em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -86,9 +113,9 @@ main {
                   font-weight: bold;
                   font-size: 1.5em;
           }
-.bubble {
+.bubble dd {
               padding: #00913d;
-              shape-outside: ellipse();
+              border-radius: 8px;
 }
 
 #description {
@@ -128,6 +155,7 @@ main {
             border: 8px solid #000;
 }
 
+/*sports page*/
 #sport_list img{
               float: left;
               width: 3%;
@@ -143,6 +171,28 @@ main {
                       padding: 0.5% 5% 2% 0;
                       margin-left: 550px
 }
+
+/*VId Game page*/
+.tel-link {
+          background-color: #404040;
+          padding: 2%;
+          margin: 0 auto;
+          width: 80%;
+          text-align: center;
+          border-radius: 5px;
+}
+
+.tel-link a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.25em;
+            display: block;
+}
+.tourneys {
+  margin-left: 10%;
+}
+
+
 /*style rules for footer*/
 footer p {
               font-size: 0.75em;
