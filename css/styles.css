@@ -34,10 +34,6 @@ img {
   }
 
 /*style rules for nav area*/
-
-
-
-/*style rules for nav area*/
 nav {
       padding: 1%;
       margin-bottom: 1%;
@@ -59,9 +55,6 @@ nav li:first-child{
   border-top: none;
 }
 
-nav li: hover{
-  background-color: #00610d;
-}
 
 nav li a{
   display: block;
@@ -94,7 +87,7 @@ main {
             color: #666600;
             font-weight: bold;
 }
-/* Style rules for homr page attributes */
+/* Style rules for home page attributes */
 .home_image {
   width: 20%;
   float: left;
@@ -210,3 +203,93 @@ footer p a{
   width: 80%;
   margin: 0 auto;
 }
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 488px), print {
+  /*tablet viewport: display set up */
+  .tablet-desktop {
+    display: block;
+  }
+  body{
+    background: repeating-linear-gradient(to top, #333399,#006600 60%);
+  }
+  header{
+  width: 100%;
+  float: left;
+  position: static;
+  position: absolute;
+  top: 0;
+}
+header img {
+  width: 22%;
+}
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav {
+      /*display: block;*/
+      content: 500px, 40px;
+      padding: 40px, auto;
+      margin-top: 125px;
+      margin-bottom: 50px;
+    }
+
+    nav ul {
+        clear: left;
+        list-style-type: none;
+        text-align: center;
+        width: 13%;
+
+    }
+    nav li{
+        font-size: 1em;
+        font-family: 'Chilanka', cursive;
+        display: inline-block;
+    }
+
+
+    nav li:hover{
+      background-color: #00610d;
+    }
+
+    nav li a{
+    /*display: inline;*/
+      color: #fff;
+      padding: 0;
+      text-decoration: none;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+    /* Desktop Viewport: Style rules for header */
+header{
+    width: 25%;
+    float: left;
+}
+    /* Desktop Viewport: Style rules for nav */
+
+    /* Desktop Viewport: Style rules for the main content */
+    main {
+        border-style: none;
+        margin-bottom: 1em 0;
+        overflow: auto;
+    }
+    .col-content {
+      width: 30%;
+      float: left;
+      padding: 1.5%;
+    }
+
+    /* Desktop Viewport: Style rule for footer */
+    footer {
+        clear: left;
+    }
+
+}
+
+/*Media Query for Large Desktop Viewport.*/
+@media screen and (min-width: 1441px){
+  #container {
+    width: 1440px;
+    margin: 0px auto;
+  }
